@@ -29,10 +29,13 @@ surfaceFeatures
 echo "🔲 Running snappyHexMesh..."
 snappyHexMesh -overwrite
 
-echo "🧱 Running surfaceCheck (optional)..."
+echo "  Running surfaceCheck (optional)..."
 surfaceCheck constant/geometry/motorBike.obj || echo "(non-critical)"
 
 echo "💨 Running simpleFoam simulation..."
 simpleFoam
 
-echo "✅ Simulation complete. Use paraFoam or convertToVTK to view results."
+echo "📤 Converting results to VTK format..."
+foamToVTK
+
+echo "✅ Simulation complete. VTK results are in the 'VTK/' folder. Use ParaView or PyVista to view them."
