@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Streamlined CFD animation generator for OpenFOAM motorbike simulation.
-Creates a 2x2 grid showing velocity, pressure, geometry, and flow analysis.
-"""
-
 import os
 import pyvista as pv
 import numpy as np
