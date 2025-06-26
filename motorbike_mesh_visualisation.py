@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Streamlined motorbike mesh visualization for OpenFOAM results.
-Provides simple, detailed, and exploded view options.
-"""
-
 import os
 import pyvista as pv
 import numpy as np
